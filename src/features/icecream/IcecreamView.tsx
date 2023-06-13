@@ -10,6 +10,8 @@ export const IcecreamView = () => {
   );
   const dispatch = useAppDispatch();
 
+  console.log('Icecream view');
+
   return (
     <div>
       <h2>Number of icecreams - {numOfIcecreams}</h2>

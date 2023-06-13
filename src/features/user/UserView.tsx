@@ -5,6 +5,9 @@ import { fetchUsers } from './userSlice';
 export const UserView = () => {
   const user = useAppSelector((state) => state.user);
 
+  console.log('User view');
+  
+
   const dispatch = useAppDispatch();
   useEffect(() => {
     dispatch(fetchUsers());

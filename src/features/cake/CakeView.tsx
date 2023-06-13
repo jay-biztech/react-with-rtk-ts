@@ -5,6 +5,8 @@ export const CakeView = () => {
   const numOfCakes = useAppSelector((state) => state.cake.numOfCakes);
   const dispatch = useAppDispatch();
 
+  console.log('Cake View');
+
   return (
     <div>
       <h2>Number of cakes - {numOfCakes}</h2>

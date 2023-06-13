@@ -6,6 +6,8 @@ import { getPostsFetch } from './postSlice';
 export const PostView = () => {
   const post = useAppSelector((state) => state.post);
 
+  console.log('Post view');
+
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getPostsFetch());
