@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
+    "@types/redux-saga": "^0.10.5",
     "axios": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-redux": "^8.0.7"
+    "react-redux": "^8.0.7",
+    "redux-saga": "^1.2.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
