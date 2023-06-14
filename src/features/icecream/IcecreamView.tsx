@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAppDispatch, useAppSelector } from '../../app/hooks';
 import { ordered, restocked } from './icecreamSlice';
+import { Heading } from './Heading';
 
 export const IcecreamView = () => {
   const [value, setValue] = useState(1);
@@ -14,7 +15,7 @@ export const IcecreamView = () => {
 
   return (
     <div>
-      <h2>Number of icecreams - {numOfIcecreams}</h2>
+      <Heading {...{ numOfIcecreams }} />
       <button
         onClick={() => {
           dispatch(ordered());
